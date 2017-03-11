@@ -8,6 +8,9 @@ namespace Game
 {
     class MovingObject
     {
+        /// <summary>
+        /// /dasdas
+        /// </summary>
         private int movingObstacleX, movingObstacleY, width = 20, height = 10;
         private int movingObstacleX2, movingObstacleY2;
         private int movingObstacleX3, movingObstacleY3; 
