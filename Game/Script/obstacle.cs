@@ -9,7 +9,7 @@ namespace Game
 {
     class obstacle
     {
-        /// <summary>
+        /// <summary>3
         /// Obstacle this is how player going to lose, if they hit these obstacle they lose the game
         /// The obstacle also spawn randomly in the game
         /// </summary>

@@ -7,7 +7,7 @@ using System.Drawing;
 
 namespace Game
 {
-    /* Function for target
+    /* Function for target3
      * Generate() random position when game start
      * Draw() the target
      * 

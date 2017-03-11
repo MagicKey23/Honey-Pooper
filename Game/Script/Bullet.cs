@@ -9,7 +9,7 @@ namespace Game
 {
     class Bullet
     {
-        /// <summary>
+        /// <summary>3
         /// this is bullet class, it like player class but it has its limit 
         /// </summary>
         private int x = 464 / 2, y = 200, width = 10, height = 20;
