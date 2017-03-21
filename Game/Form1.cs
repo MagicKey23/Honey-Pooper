@@ -196,7 +196,7 @@ namespace Game
                 Target.draw(g);
                 Obstacle.draw(g);
                 b.Draw(g);
-                p.draw(g);
+                p.draw(g, direction);
 
                 if (score > 20)
                 {
@@ -226,7 +226,7 @@ namespace Game
             {
                 obstacleDirection = 1;
             }
-            if (movingObject.movingObstacle.X > 400 || movingObject.movingObstacle.Y > 400 || movingObject.movingObstacle.Y > 400)
+            if (movingObject.movingObstacle.X > 818 || movingObject.movingObstacle.Y > 514)
             {
                 obstacleDirection = 0;
             }
@@ -253,17 +253,194 @@ namespace Game
                     Restart();
                 }
             }
-            if(b.bullet.Y < 200)
+            if(b.bullet.Y < 350)
             {
                 ammunitionCondition = false;
             }
 
-            if (p.player.Y < 0 || p.player.X > 464 || p.player.X < 0)
+            if (p.player.Y < 0 || p.player.X > 818 || p.player.X < 0)
             {
                 Restart();
             }
+            //1
+            if(Obstacle.obstacle1.IntersectsWith(Obstacle.obstacle2)
+                ||
+                Obstacle.obstacle1.IntersectsWith(Obstacle.obstacle3)
+                ||
+                Obstacle.obstacle1.IntersectsWith(Obstacle.obstacle4)
+                ||
+                Obstacle.obstacle1.IntersectsWith(Obstacle.obstacle5)
+                ||
+                Obstacle.obstacle1.IntersectsWith(Obstacle.obstacle6)
+                ||
+                 Obstacle.obstacle1.IntersectsWith(Obstacle.obstacle7)
+                ||
+                 Obstacle.obstacle1.IntersectsWith(Obstacle.obstacle8)
+                ||
+                Obstacle.obstacle1.IntersectsWith(Target.Target)
+                )
+            {
 
-            
+                Obstacle = new obstacle(rand);
+            }
+            //2
+            if (Obstacle.obstacle2.IntersectsWith(Obstacle.obstacle1)
+           ||
+           Obstacle.obstacle2.IntersectsWith(Obstacle.obstacle3)
+           ||
+           Obstacle.obstacle2.IntersectsWith(Obstacle.obstacle4)
+           ||
+           Obstacle.obstacle2.IntersectsWith(Obstacle.obstacle5)
+           ||
+           Obstacle.obstacle2.IntersectsWith(Obstacle.obstacle6)
+           ||
+            Obstacle.obstacle2.IntersectsWith(Obstacle.obstacle7)
+           ||
+            Obstacle.obstacle2.IntersectsWith(Obstacle.obstacle8)
+              ||
+                Obstacle.obstacle2.IntersectsWith(Target.Target)
+           )
+            {
+
+                Obstacle = new obstacle(rand);
+            }
+            //3
+            if (Obstacle.obstacle3.IntersectsWith(Obstacle.obstacle1)
+           ||
+           Obstacle.obstacle3.IntersectsWith(Obstacle.obstacle2)
+           ||
+           Obstacle.obstacle3.IntersectsWith(Obstacle.obstacle4)
+           ||
+           Obstacle.obstacle3.IntersectsWith(Obstacle.obstacle5)
+           ||
+           Obstacle.obstacle3.IntersectsWith(Obstacle.obstacle6)
+           ||
+            Obstacle.obstacle3.IntersectsWith(Obstacle.obstacle7)
+           ||
+            Obstacle.obstacle3.IntersectsWith(Obstacle.obstacle8)
+              ||
+                Obstacle.obstacle3.IntersectsWith(Target.Target)
+           )
+            {
+
+                Obstacle = new obstacle(rand);
+            }
+            //4
+            if (Obstacle.obstacle4.IntersectsWith(Obstacle.obstacle1)
+           ||
+           Obstacle.obstacle4.IntersectsWith(Obstacle.obstacle2)
+           ||
+           Obstacle.obstacle4.IntersectsWith(Obstacle.obstacle3)
+           ||
+           Obstacle.obstacle4.IntersectsWith(Obstacle.obstacle5)
+           ||
+           Obstacle.obstacle4.IntersectsWith(Obstacle.obstacle6)
+           ||
+            Obstacle.obstacle4.IntersectsWith(Obstacle.obstacle7)
+           ||
+            Obstacle.obstacle4.IntersectsWith(Obstacle.obstacle8)
+              ||
+                Obstacle.obstacle4.IntersectsWith(Target.Target)
+           )
+            {
+
+                Obstacle = new obstacle(rand);
+            }
+
+            //5
+            if (Obstacle.obstacle5.IntersectsWith(Obstacle.obstacle2)
+           ||
+           Obstacle.obstacle5.IntersectsWith(Obstacle.obstacle3)
+           ||
+           Obstacle.obstacle5.IntersectsWith(Obstacle.obstacle4)
+           ||
+           Obstacle.obstacle5.IntersectsWith(Obstacle.obstacle1)
+           ||
+           Obstacle.obstacle5.IntersectsWith(Obstacle.obstacle6)
+           ||
+            Obstacle.obstacle5.IntersectsWith(Obstacle.obstacle7)
+           ||
+            Obstacle.obstacle5.IntersectsWith(Obstacle.obstacle8)
+              ||
+                Obstacle.obstacle5.IntersectsWith(Target.Target)
+           )
+            {
+
+                Obstacle = new obstacle(rand);
+            }
+
+
+            //6
+            if (Obstacle.obstacle6.IntersectsWith(Obstacle.obstacle2)
+           ||
+           Obstacle.obstacle6.IntersectsWith(Obstacle.obstacle3)
+           ||
+           Obstacle.obstacle6.IntersectsWith(Obstacle.obstacle4)
+           ||
+           Obstacle.obstacle6.IntersectsWith(Obstacle.obstacle5)
+           ||
+           Obstacle.obstacle6.IntersectsWith(Obstacle.obstacle1)
+           ||
+            Obstacle.obstacle6.IntersectsWith(Obstacle.obstacle7)
+           ||
+            Obstacle.obstacle6.IntersectsWith(Obstacle.obstacle8)
+              ||
+                Obstacle.obstacle6.IntersectsWith(Target.Target)
+           )
+            {
+
+                Obstacle = new obstacle(rand);
+            }
+
+            //7
+            if (Obstacle.obstacle7.IntersectsWith(Obstacle.obstacle2)
+           ||
+           Obstacle.obstacle7.IntersectsWith(Obstacle.obstacle3)
+           ||
+           Obstacle.obstacle7.IntersectsWith(Obstacle.obstacle4)
+           ||
+           Obstacle.obstacle7.IntersectsWith(Obstacle.obstacle5)
+           ||
+           Obstacle.obstacle7.IntersectsWith(Obstacle.obstacle6)
+           ||
+            Obstacle.obstacle7.IntersectsWith(Obstacle.obstacle1)
+           ||
+            Obstacle.obstacle7.IntersectsWith(Obstacle.obstacle8)
+              ||
+                Obstacle.obstacle7.IntersectsWith(Target.Target)
+           )
+            {
+
+                Obstacle = new obstacle(rand);
+            }
+
+            //8
+            if (Obstacle.obstacle8.IntersectsWith(Obstacle.obstacle2)
+           ||
+           Obstacle.obstacle8.IntersectsWith(Obstacle.obstacle3)
+           ||
+           Obstacle.obstacle8.IntersectsWith(Obstacle.obstacle4)
+           ||
+           Obstacle.obstacle8.IntersectsWith(Obstacle.obstacle5)
+           ||
+           Obstacle.obstacle8.IntersectsWith(Obstacle.obstacle6)
+           ||
+            Obstacle.obstacle8.IntersectsWith(Obstacle.obstacle7)
+           ||
+            Obstacle.obstacle8.IntersectsWith(Obstacle.obstacle1)
+              ||
+                Obstacle.obstacle8.IntersectsWith(Target.Target)
+           )
+            {
+
+                Obstacle = new obstacle(rand);
+            }
+
+
+
+
+
+
 
             if (p.player.IntersectsWith(Target.Target) || b.bullet.IntersectsWith(Target.Target))
             {

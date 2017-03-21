@@ -41,10 +41,10 @@
             // 
             this.author_lbl.AutoSize = true;
             this.author_lbl.BackColor = System.Drawing.Color.Transparent;
-            this.author_lbl.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.author_lbl.Location = new System.Drawing.Point(277, 274);
+            this.author_lbl.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.author_lbl.Location = new System.Drawing.Point(456, 422);
             this.author_lbl.Name = "author_lbl";
-            this.author_lbl.Size = new System.Drawing.Size(159, 30);
+            this.author_lbl.Size = new System.Drawing.Size(349, 62);
             this.author_lbl.TabIndex = 0;
             this.author_lbl.Text = "Made by Hoang Anh Nguyen\r\n\r\n";
             // 
@@ -52,10 +52,10 @@
             // 
             this.score_lbl.AutoSize = true;
             this.score_lbl.BackColor = System.Drawing.Color.Transparent;
-            this.score_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.score_lbl.Location = new System.Drawing.Point(12, 274);
+            this.score_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.score_lbl.Location = new System.Drawing.Point(18, 422);
             this.score_lbl.Name = "score_lbl";
-            this.score_lbl.Size = new System.Drawing.Size(61, 20);
+            this.score_lbl.Size = new System.Drawing.Size(99, 31);
             this.score_lbl.TabIndex = 1;
             this.score_lbl.Text = "Score:";
             this.score_lbl.Visible = false;
@@ -64,10 +64,10 @@
             // 
             this.score_hold.AutoSize = true;
             this.score_hold.BackColor = System.Drawing.Color.Transparent;
-            this.score_hold.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.score_hold.Location = new System.Drawing.Point(79, 274);
+            this.score_hold.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.score_hold.Location = new System.Drawing.Point(159, 422);
             this.score_hold.Name = "score_hold";
-            this.score_hold.Size = new System.Drawing.Size(0, 20);
+            this.score_hold.Size = new System.Drawing.Size(0, 31);
             this.score_hold.TabIndex = 2;
             this.score_hold.Visible = false;
             // 
@@ -75,10 +75,10 @@
             // 
             this.win_lbl.AutoSize = true;
             this.win_lbl.BackColor = System.Drawing.Color.Transparent;
-            this.win_lbl.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.win_lbl.Location = new System.Drawing.Point(121, 88);
+            this.win_lbl.Font = new System.Drawing.Font("Palatino Linotype", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.win_lbl.Location = new System.Drawing.Point(272, 137);
             this.win_lbl.Name = "win_lbl";
-            this.win_lbl.Size = new System.Drawing.Size(187, 26);
+            this.win_lbl.Size = new System.Drawing.Size(263, 37);
             this.win_lbl.TabIndex = 3;
             this.win_lbl.Text = "You Won! Good job";
             this.win_lbl.Visible = false;
@@ -88,20 +88,21 @@
             this.title_label.AutoSize = true;
             this.title_label.BackColor = System.Drawing.Color.Transparent;
             this.title_label.Font = new System.Drawing.Font("Castellar", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.title_label.Location = new System.Drawing.Point(27, 22);
+            this.title_label.ForeColor = System.Drawing.SystemColors.Menu;
+            this.title_label.Location = new System.Drawing.Point(272, 40);
             this.title_label.Name = "title_label";
-            this.title_label.Size = new System.Drawing.Size(376, 42);
+            this.title_label.Size = new System.Drawing.Size(277, 42);
             this.title_label.TabIndex = 4;
-            this.title_label.Text = " Angry Machine\r\n";
+            this.title_label.Text = "Honey Poop";
             // 
             // ammunition_lbl
             // 
             this.ammunition_lbl.AutoSize = true;
             this.ammunition_lbl.BackColor = System.Drawing.Color.Transparent;
-            this.ammunition_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ammunition_lbl.Location = new System.Drawing.Point(346, 280);
+            this.ammunition_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ammunition_lbl.Location = new System.Drawing.Point(533, 422);
             this.ammunition_lbl.Name = "ammunition_lbl";
-            this.ammunition_lbl.Size = new System.Drawing.Size(34, 20);
+            this.ammunition_lbl.Size = new System.Drawing.Size(55, 31);
             this.ammunition_lbl.TabIndex = 5;
             this.ammunition_lbl.Text = "1/3";
             this.ammunition_lbl.Visible = false;
@@ -113,7 +114,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BackgroundImage = global::Game.Properties.Resources.sjhit;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(448, 309);
+            this.ClientSize = new System.Drawing.Size(802, 476);
             this.Controls.Add(this.ammunition_lbl);
             this.Controls.Add(this.title_label);
             this.Controls.Add(this.win_lbl);

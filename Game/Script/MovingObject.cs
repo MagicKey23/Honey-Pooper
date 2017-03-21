@@ -11,7 +11,7 @@ namespace Game
         /// <summary>3
         /// /dasdas
         /// </summary>
-        private int movingObstacleX, movingObstacleY, width = 20, height = 10;
+        private int movingObstacleX, movingObstacleY, width = 30, height = 50;
         private int movingObstacleX2, movingObstacleY2;
         private int movingObstacleX3, movingObstacleY3; 
         public Rectangle movingObstacle;
@@ -35,12 +35,12 @@ namespace Game
         }
         public void Spawn(Random Rand)
         {
-            movingObstacleX = Rand.Next(0,460);
-            movingObstacleY = Rand.Next(0,140);
-            movingObstacleX2 = Rand.Next(0, 460);
-            movingObstacleY2 = Rand.Next(0, 140);
-            movingObstacleX3 = Rand.Next(0, 460);
-            movingObstacleY3 = Rand.Next(0, 140);
+            movingObstacleX = Rand.Next(0,818);
+            movingObstacleY = Rand.Next(0,514);
+            movingObstacleX2 = Rand.Next(0, 818);
+            movingObstacleY2 = Rand.Next(0, 514);
+            movingObstacleX3 = Rand.Next(0, 818);
+            movingObstacleY3 = Rand.Next(0, 514);
 
         }
         public void Moving(Random Speed, int Obstacledirection)

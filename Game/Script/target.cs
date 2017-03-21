@@ -21,10 +21,11 @@ namespace Game
         ///  Construct Target, for player to hit to receive the point
         ///  the target spawn at random position when it called by main function
         /// </summary>
-
-        private int x, y, width = 20, height = 10;
+        Image Honey;
+        private int x, y, width = 40, height = 40;
         public Rectangle Target;
         public target(Random rand) {
+            Honey = Game.Properties.Resources.Honey;
             Generate(rand);
             Target = new Rectangle(x, y, width, height);
             
@@ -34,7 +35,8 @@ namespace Game
         {
             Target.X = x;
             Target.Y = y;
-            g.FillRectangle(Brushes.Blue, Target);
+            //g.FillRectangle(Brushes.Blue, Target);
+            g.DrawImage(Honey, Target);
         }
 
 

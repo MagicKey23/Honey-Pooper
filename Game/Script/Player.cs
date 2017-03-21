@@ -14,23 +14,40 @@ namespace Game
         /// This is the Player class, the player held the movement
         /// 
         /// </summary>
-        private int x = 464/2, y = 200, width = 10, height = 25;
+
+        private Image spriteTop;
+        private Image spriteRight;
+        private Image spriteLeft;
+        private int x = 514/2, y = 360, width = 30, height = 50;
         public Rectangle player;
         
          
               
           public Player() {
             player = new Rectangle(x, y, width, height);
-       
+            spriteTop = Game.Properties.Resources.BearTop;
+            spriteRight = Game.Properties.Resources.BearRight;
+            spriteLeft = Game.Properties.Resources.Bearleft;
         }
-       
-        
 
 
-        public void draw(Graphics g)
+
+
+        public void draw(Graphics g, int direction)
         {
-          
-            g.FillRectangle(Brushes.Green, player);
+
+            //g.FillRectangle(Brushes.Green, player);
+            switch (direction) {
+                case 0:
+            g.DrawImage(spriteRight, player);
+                    break;
+                case 1:
+            g.DrawImage(spriteLeft, player);
+                    break;
+                case 2: 
+            g.DrawImage(spriteTop, player);
+                    break;
+        }
         }
         public void movement(int direction)
         {

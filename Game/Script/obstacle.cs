@@ -13,8 +13,8 @@ namespace Game
         /// Obstacle this is how player going to lose, if they hit these obstacle they lose the game
         /// The obstacle also spawn randomly in the game
         /// </summary>
-        
-        private int width = 5, height = 5;
+        private Image Poop;
+        private int width = 50, height = 50;
         private int obstacle1X, obstacle1Y;
         private int obstacle2X, obstacle2Y;
         private int obstacle3X, obstacle3Y;
@@ -35,7 +35,9 @@ namespace Game
        
 
         public obstacle(Random rand) {
+            Poop = Game.Properties.Resources.Poop;
             generate(rand);
+
             obstacle1 = new Rectangle(obstacle1X,obstacle1Y,width,height);
             obstacle2 = new Rectangle(obstacle2X,obstacle2Y,width,height);
             obstacle3 = new Rectangle(obstacle3X,obstacle3Y,width,height);
@@ -48,7 +50,15 @@ namespace Game
         }
         public void draw(Graphics g)
         {
-       
+            g.DrawImage(Poop, obstacle1);
+            g.DrawImage(Poop, obstacle2);
+            g.DrawImage(Poop, obstacle3);
+            g.DrawImage(Poop, obstacle4);
+            g.DrawImage(Poop, obstacle5);
+            g.DrawImage(Poop, obstacle6);
+            g.DrawImage(Poop, obstacle7);
+            g.DrawImage(Poop, obstacle8);
+            /*
             g.FillRectangle(Brushes.Red, obstacle1);
             g.FillRectangle(Brushes.Red, obstacle2);
             g.FillRectangle(Brushes.Red, obstacle3);
@@ -57,27 +67,27 @@ namespace Game
             g.FillRectangle(Brushes.Red, obstacle6);
             g.FillRectangle(Brushes.Red, obstacle7);
             g.FillRectangle(Brushes.Red, obstacle8);
-
+            */
         }
 
         public void generate(Random rand)
         {
-            obstacle1X = rand.Next(0,464);
-            obstacle1Y = rand.Next(0,140);
-            obstacle2X = rand.Next(0, 464);
-            obstacle2Y = rand.Next(0, 140);
-            obstacle3X = rand.Next(0, 464);
-            obstacle3Y = rand.Next(0, 140);
-            obstacle4X = rand.Next(0, 464);
-            obstacle4Y = rand.Next(0, 140);
-            obstacle5X = rand.Next(0, 464);
-            obstacle5Y = rand.Next(0, 140);
-            obstacle6X = rand.Next(0, 464);
-            obstacle6Y = rand.Next(0, 140);
-            obstacle7X = rand.Next(0, 464);
-            obstacle7Y = rand.Next(0, 140);
-            obstacle8X = rand.Next(0, 464);
-            obstacle8Y = rand.Next(0, 140);
+            obstacle1X = rand.Next(0,818);
+            obstacle1Y = rand.Next(0,250);
+            obstacle2X = rand.Next(0, 818);
+            obstacle2Y = rand.Next(0, 250);
+            obstacle3X = rand.Next(0, 818);
+            obstacle3Y = rand.Next(0, 250);
+            obstacle4X = rand.Next(0, 818);
+            obstacle4Y = rand.Next(0, 250);
+            obstacle5X = rand.Next(0, 818);
+            obstacle5Y = rand.Next(0, 250);
+            obstacle6X = rand.Next(0, 818);
+            obstacle6Y = rand.Next(0, 250);
+            obstacle7X = rand.Next(0, 818);
+            obstacle7Y = rand.Next(0, 250);
+            obstacle8X = rand.Next(0, 818);
+            obstacle8Y = rand.Next(0, 250);
             Random Speed = new Random();
             int flySpeed = Speed.Next(5, 10);
             int flySpeed2 = Speed.Next(5, 10);

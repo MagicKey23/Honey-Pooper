@@ -12,7 +12,7 @@ namespace Game
         /// <summary>3
         /// this is bullet class, it like player class but it has its limit 
         /// </summary>
-        private int x = 464 / 2, y = 200, width = 10, height = 20;
+        private int x = 514/2, y = 360, width = 10, height = 20;
         public Rectangle bullet;
         public Bullet()
         {
