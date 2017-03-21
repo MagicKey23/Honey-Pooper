@@ -72,21 +72,21 @@ namespace Game
 
         public void generate(Random rand)
         {
-            obstacle1X = rand.Next(0,818);
+            obstacle1X = rand.Next(50,700);
             obstacle1Y = rand.Next(0,250);
-            obstacle2X = rand.Next(0, 818);
+            obstacle2X = rand.Next(50, 700);
             obstacle2Y = rand.Next(0, 250);
-            obstacle3X = rand.Next(0, 818);
+            obstacle3X = rand.Next(50, 700);
             obstacle3Y = rand.Next(0, 250);
-            obstacle4X = rand.Next(0, 818);
+            obstacle4X = rand.Next(50, 700);
             obstacle4Y = rand.Next(0, 250);
-            obstacle5X = rand.Next(0, 818);
+            obstacle5X = rand.Next(50, 700);
             obstacle5Y = rand.Next(0, 250);
-            obstacle6X = rand.Next(0, 818);
+            obstacle6X = rand.Next(50, 700);
             obstacle6Y = rand.Next(0, 250);
-            obstacle7X = rand.Next(0, 818);
+            obstacle7X = rand.Next(50, 700);
             obstacle7Y = rand.Next(0, 250);
-            obstacle8X = rand.Next(0, 818);
+            obstacle8X = rand.Next(50, 700);
             obstacle8Y = rand.Next(0, 250);
             Random Speed = new Random();
             int flySpeed = Speed.Next(5, 10);

@@ -65,7 +65,7 @@
             this.score_hold.AutoSize = true;
             this.score_hold.BackColor = System.Drawing.Color.Transparent;
             this.score_hold.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.score_hold.Location = new System.Drawing.Point(159, 422);
+            this.score_hold.Location = new System.Drawing.Point(132, 422);
             this.score_hold.Name = "score_hold";
             this.score_hold.Size = new System.Drawing.Size(0, 31);
             this.score_hold.TabIndex = 2;
