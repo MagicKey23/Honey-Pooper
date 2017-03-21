@@ -1,4 +1,4 @@
-# Angry-Machine is my first game, that i coded from scratch
+#Honey Pooper
 ----------------------------------------------------------
 # The Game featured bullet, obstacle, moving obstacle,target, score, and of course player.
 ----------------------------------------------------------
