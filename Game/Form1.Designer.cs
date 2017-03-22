@@ -126,7 +126,7 @@
             this.MaximizeBox = false;
             this.Name = "Linear";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Linear";
+            this.Text = "HoneyPoop";
             this.Load += new System.EventHandler(this.Linear_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Linear_Paint);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Linear_keyDown);

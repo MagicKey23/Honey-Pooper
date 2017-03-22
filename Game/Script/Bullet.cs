@@ -12,16 +12,18 @@ namespace Game
         /// <summary>3
         /// this is bullet class, it like player class but it has its limit 
         /// </summary>
-        private int x = 514/2, y = 360, width = 10, height = 20;
+        private int x = 514/2, y = 360, width = 30, height = 30;
         public Rectangle bullet;
+        private Image Rock;
         public Bullet()
         {
             bullet = new Rectangle(x, y, width, height);
-
+            Rock = Game.Properties.Resources.Rock;
         }
         public void Draw(Graphics g)
         {
-            g.FillRectangle(Brushes.White, bullet);
+            g.DrawImage(Rock, bullet);
+          //  g.FillRectangle(Brushes.White, bullet);
         }
         public void bulletMove(int bulletFly)
         {

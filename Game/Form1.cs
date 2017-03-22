@@ -38,10 +38,14 @@ namespace Game
         private MovingObject movingObject;
         private Random Speed = new Random();
         private int obstacleDirection = 1;
+        private extraBullet extrabullet;
+       
+     
         public Linear()
         {
             // Call the object
             InitializeComponent();
+            extrabullet = new extraBullet(rand);
             Target = new target(rand);
             Obstacle = new obstacle(rand);
             p = new Player();
@@ -50,8 +54,8 @@ namespace Game
             b = new Bullet();
             movingObject = new MovingObject(rand);
 
-
-        }
+      
+    }
       
         private void Linear_keyDown(Object sender, KeyEventArgs e)
         {
@@ -189,15 +193,19 @@ namespace Game
 
         private void Linear_Paint(Object sender, PaintEventArgs e)
         {
+            //for bonus bullet
+          
             g = this.CreateGraphics();
 
             if (drawingObject)
             {
+                
                 Target.draw(g);
                 Obstacle.draw(g);
                 b.Draw(g);
                 p.draw(g, direction);
-
+                extrabullet.Draw(g);
+              
                 if (score > 20)
                 {
                     movingObject.draw(g);
@@ -212,7 +220,7 @@ namespace Game
         private void Update(Object sender, EventArgs e)
         {
 
-
+            
             ammunitionCondition = true;
             ammunition_lbl.Text = String.Format("{0}/{1}", ammunition, ammunitionHolder);
             score_hold.Text = String.Format("{0}", score);
@@ -436,6 +444,33 @@ namespace Game
                 Obstacle = new obstacle(rand);
             }
 
+            if (p.player.IntersectsWith(extrabullet.theRock))
+            {
+                if (extrabullet.randomSpawn <= 10)
+                {
+                    extrabullet.randomSpawn = 15;
+                    ammunitionHolder += 1;
+                    p = new Player();
+                    b = new Bullet();
+                    direction = 0;
+                    bulletFire = 0;
+                }
+               
+            }
+            if (b.bullet.IntersectsWith(extrabullet.theRock))
+            {
+                if (extrabullet.randomSpawn <= 10)
+                {
+                    extrabullet.randomSpawn = 15;
+                    ammunitionHolder += 1;
+                    ammunition = 1;
+                    p = new Player();
+                    b = new Bullet();
+                    ammunitionCondition = true;
+                    direction = 0;
+                    bulletFire = 0;
+                }
+            }
 
 
 
@@ -453,6 +488,7 @@ namespace Game
                 b = new Bullet();
                 ammunitionCondition = true;
                 movingObject = new MovingObject(rand);
+                extrabullet = new extraBullet(rand);
             }
 
             if (score == 50)
@@ -483,6 +519,7 @@ namespace Game
             ammunitionHolder = 3;
             drawingObject = false;
             movingObject = new MovingObject(rand);
+            extrabullet = new extraBullet(rand);
            
            
          
