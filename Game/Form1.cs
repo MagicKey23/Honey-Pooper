@@ -39,6 +39,7 @@ namespace Game
         private Random Speed = new Random();
         private int obstacleDirection = 1;
         private extraBullet extrabullet;
+        private int ammuBullet = 1;
        
      
         public Linear()
@@ -117,25 +118,38 @@ namespace Game
                         
                             if (ammunition > 0)
                             {
+                            if (ammunition > 1)
+                            {
+                                reload = false;
+                                ammunition -= ammuBullet;
+                                bulletFire = 2;
+                            } else
+
+                            {
                                 reload = true;
                                 bulletFire = 2;
-                            }else if(ammunition <= 0)
+                                ammunition = ammunition - ammuBullet;
+                            }
+                        }
+                        else
                             {
                                 reload = false;
                             }
-                            ammunition = ammunition - ammunition;
+                           
 
                             if (ammunitionHolder > 0)
                             {
                                 if (reload)
                                 {
-                                 
-                                    ammunition = ammunition + 1;
+
+                              
+                                    ammunition = ammunition + ammuBullet;
                                     ammunitionHolder = ammunitionHolder - 1;
+
+                               
+                                   
                                     
                                 }
-                               
-                            
                         
 
                         }
@@ -449,7 +463,7 @@ namespace Game
                 if (extrabullet.randomSpawn <= 10)
                 {
                     extrabullet.randomSpawn = 15;
-                    ammunitionHolder += 1;
+                    ammunition += ammuBullet;
                     p = new Player();
                     b = new Bullet();
                     direction = 0;
@@ -463,7 +477,7 @@ namespace Game
                 {
                     extrabullet.randomSpawn = 15;
                     ammunitionHolder += 1;
-                    ammunition = 1;
+                    ammunition += ammuBullet;
                     p = new Player();
                     b = new Bullet();
                     ammunitionCondition = true;

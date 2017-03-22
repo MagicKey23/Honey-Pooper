@@ -14,7 +14,7 @@ namespace Game
         private Image newRock;
         private Random Spawn = new Random();
         public int randomSpawn;
-        public readonly int _randomSpawn;
+        //public readonly int _randomSpawn;
 
       
         public extraBullet(Random rand) {
