@@ -14,7 +14,7 @@ namespace Game
         /// The obstacle also spawn randomly in the game
         /// </summary>
         private Image Poop;
-        private int width = 50, height = 50;
+        private int width = 35, height = 40;
         private int obstacle1X, obstacle1Y;
         private int obstacle2X, obstacle2Y;
         private int obstacle3X, obstacle3Y;
