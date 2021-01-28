@@ -4,6 +4,7 @@
 ----------------------------------------------------------
 # How to play?
 Collect the Honey
+
 Collect the rock to add it into your inventory
 # Controller
 Press Enter to start the game
