@@ -26,6 +26,5 @@ Microsoft Visual Studio
 ![alt text](./Game/Img/GamePlay.png)
 =======
 Microsoft Visual Studio Form
->>>>>>> 577ca3032b032ed63369573be278b0a702ebb3d3
 
 All right reserved. - Kaney Nguyen
