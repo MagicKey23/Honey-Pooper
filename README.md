@@ -20,10 +20,10 @@ Open HoneyPooper.exe
 
 # Tool i used to make the game
 
-<<<<<<< HEAD
+
 Microsoft Visual Studio
-![alt text](./Game/Img/Menu.png)
-![alt text](./Game/Img/GamePlay.png)
+![alt text](./Game/Img/Menu.pngs=200)
+![alt text](./Game/Img/GamePlay.pngs=200)
 =======
 Microsoft Visual Studio Form
 
