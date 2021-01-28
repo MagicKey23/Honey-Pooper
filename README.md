@@ -4,13 +4,15 @@
 ----------------------------------------------------------
 # How to play?
 Collect the Honey
+Collect the rock to add it into your inventory
 # Controller
+Enter to start the game
 Left Arrow < to move left
 Right Arrow > to move right
 Space to shoot
 UP Arrow to run straight to the honey to save bullet
 
-Ammo are limited, so use it wisely
+Ammo are very limited, so use it wisely, at level 20 object will start to move. 
 
 # The Goal of the game
 have fun
@@ -24,6 +26,7 @@ Open HoneyPooper.exe
 Microsoft Visual Studio
 ![alt text](./Game/Img/Menu.png)
 ![alt text](./Game/Img/GamePlay.png)
+![alt text](./Game/Img/difficult go up.png)
 =======
 Microsoft Visual Studio Form
 
