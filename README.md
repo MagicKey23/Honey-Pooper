@@ -3,24 +3,29 @@
 # The Game featured bullet, obstacle, moving obstacle,target, score, and of course player.
 ----------------------------------------------------------
 # How to play?
-Try to hit the blue target as many as you can
+Collect the Honey
 # Controller
 Left Arrow < to move left
 Right Arrow > to move right
 Space to shoot
-UP Arrow to Charge
+UP Arrow to run straight to the honey to save bullet
 
 Ammo are limited, so use it wisely
 
 # The Goal of the game
-have fun, concentrate, and make player angry :)
+have fun
 
 # To open the game
-Go Game/Bin/Debug/Game.exe
+Open HoneyPooper.exe
 
 # Tool i used to make the game
 
+<<<<<<< HEAD
 Microsoft Visual Studio
 ![alt text](./Game/Img/Menu.png)
 ![alt text](./Game/Img/GamePlay.png)
+=======
+Microsoft Visual Studio Form
+>>>>>>> 577ca3032b032ed63369573be278b0a702ebb3d3
 
+All right reserved. - Kaney Nguyen
