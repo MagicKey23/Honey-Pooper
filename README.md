@@ -13,7 +13,7 @@ Right Arrow > to move right
 Space to shoot
 UP Arrow to run straight to the honey to save bullet
 
-Ammo are very limited, so use it wisely, at level 20 object will start to move. 
+Ammos are very limited, so use it wisely, at level 20 object will start to move. 
 
 # The Goal of the game
 have fun
