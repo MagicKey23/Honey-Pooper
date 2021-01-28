@@ -21,5 +21,6 @@ Go Game/Bin/Debug/Game.exe
 # Tool i used to make the game
 
 Microsoft Visual Studio
-
+![alt text](./Game/Img/Menu.png)
+![alt text](./Game/Img/GamePlay.png)
 
