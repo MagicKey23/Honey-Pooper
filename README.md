@@ -22,8 +22,8 @@ Open HoneyPooper.exe
 
 
 Microsoft Visual Studio
-![alt text](./Game/Img/Menu.pngs=200)
-![alt text](./Game/Img/GamePlay.pngs=200)
+![alt text](./Game/Img/Menu.png | =500x500)
+![alt text](./Game/Img/GamePlay.png | =500x500)
 =======
 Microsoft Visual Studio Form
 
