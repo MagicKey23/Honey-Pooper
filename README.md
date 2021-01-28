@@ -23,7 +23,7 @@ Open HoneyPooper.exe
 # Tool i used to make the game
 
 
-Microsoft Visual Studio
+Microsoft Visual Studio 2010 Professional <-- RIP
 ![alt text](./Game/Img/Menu.png)
 ![alt text](./Game/Img/GamePlay.png)
 ![alt text](./Game/Img/GamePlay2.png)
