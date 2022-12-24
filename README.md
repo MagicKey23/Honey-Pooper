@@ -1,4 +1,4 @@
-#Honey Pooper | THIS IS MY HIGH SCHOOL PROJECT, I'm VERY PROUD OF IT|
+#Honey Pooper | THIS IS MY HIGH SCHOOL PROJECT, I'm VERY PROUD OF IT | Made in 2015
 ----------------------------------------------------------
 # The Game featured bullet, obstacle, moving obstacle,target, score, and of course player.
 ----------------------------------------------------------
